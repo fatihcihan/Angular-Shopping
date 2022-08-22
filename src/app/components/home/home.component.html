@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<br>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <app-product (myEvent)="getBasekets($event)"></app-product>
+        </div>
+        <div class="col-lg-4">
+            <app-basket [baskets]="baskets" [total]="total"></app-basket>
+        </div>
+    </div>
